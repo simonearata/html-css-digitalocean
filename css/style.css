@@ -1,0 +1,91 @@
+/* GLOBAL */
+ul .list-inline li{
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.margin-30{
+  margin: 30px 0;
+}
+
+.padding-30{
+  padding: 30px 0;
+}
+
+.color-grey{
+  background-color: #f3f5f9;
+}
+
+/* HEADER */
+.header_fixed{
+  height: 80px;
+  background-color: white;
+}
+
+/* MAIN */
+/* SEZIONE JUMBOTRON */
+#jumbotron{
+  background-color: #004aff;
+  color: white;
+}
+
+.sa-box{
+  max-width: 400px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+/* SEZIONE LOGHI */
+.list-loghi{
+  height: 350px;
+}
+
+ul{
+  margin: auto;
+}
+
+/* SEZIONE DEPLOY */
+.deploy-down{
+  height: 290px;
+}
+
+/* SEZIONE DESIGNED */
+
+
+@media screen and (max-width: 767px){
+  .sa-box{
+    margin-top: 0;
+  }  
+
+  ul{
+    max-width: 381px;
+  }
+
+  .list-loghi ul li{
+    width: 48%;
+    margin: 25px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .sa-box{
+    height: 400px;
+  }
+
+  .list-loghi{
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .sa-box{
+    height: 400px;
+  }
+  
+  .list-loghi{
+    height: 250px;
+  }
+}
