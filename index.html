@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=Digital  , initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>DigitalOcean</title>
   <!-- fontawesome -->
@@ -13,19 +15,40 @@
 </head>
 <body>
   <!-- HEADER -->
-  <head>
+  <header>
     
     <!-- MENU FIXED -->
     <div class="header_fixed">
-      <div class="container">
+      <div class="container over-header">
         <div class="row">
-          <div class="col-xs-6">DigitalOcean</div>
-          <div class="col-xs-6 text-right">Hamburger menu</div>
+          <!-- LOGO -->
+          <div class="col-xs-6 col-md-3">
+            <img src="img/logo.png" alt="" class="margin-top10">
+          </div>
+          <!-- PARTE CENTRALE -->
+          <div class="hidden-xs hidden-sm col-md-5 line-height-55">
+            <ul class="list-inline">
+              <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="">Customers</a></li>
+              <li><a href="">Community<i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="">Pricing</a></li>
+            </ul>
+          </div>
+          <!-- PARTE DI DESTRA -->
+          <div class="hidden-xs hidden-sm col-md-4 line-height-55">
+            <ul class="list-inline">
+              <li>Docs</li>
+              <li>Support</li>
+              <li>Login</li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+          <div class="col-xs-6 hidden-md hidden-lg text-right">Hamburger menu</div>
         </div>
       </div>
     </div>
 
-  </head>
+  </header>
 
   <!-- MAIN -->
   <main>
@@ -34,13 +57,34 @@
     <section id="jumbotron">
       <div class="container">
         <div class="row">
+          
+          <!-- TITOLO E TESTO -->
           <div class="col-xs-12 col-sm-6">
-            <h1>Testo jumbotron</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos maxime saepe quas repellat soluta iusto doloribus inventore obcaecati quam. Facilis quia at consequuntur itaque deserunt dolor, consequatur error impedit?</p>
+            <h1 class="font-bold">The simplest cloud platform for developers & teams</h1>
+            <p class="font-jambo">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean.
+              We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.
+            </p>
           </div>
+          
+          <!-- FORM E BOTTONI-->
           <div class="col-xs-12 col-sm-6">
-            <div class="sa-box">
-
+            <div class="sa-box text-center">
+              <h3 class="font-bold padding-top30 line-height-35 color-textb">
+                Deploy your app in seconds. <br>
+                <span class="color-blue">Get started now.</span>
+              </h3>
+              <form>
+                <div class="spazio wd-90">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="spazio wd-90">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+              </form>
+              <button type="button" class="btn wd-90">Create your account</button>
+              <button type="button" class="btn wd-90">
+                <img src="img/google-icon.png" alt="">
+                Sign up with google</button>
             </div>
           </div>
         </div>
@@ -50,14 +94,14 @@
     <!-- SEZIONE LOGHI -->
     <section id="loghi" class="color-grey">
       <div class="list-loghi text-center">
-        <p class="padding-30">INNOVATIVE......</p>
-        <ul class="list-inline">
-          <li><div>Logo</div></li>
-          <li><div>Logo</div></li>
-          <li><div>Logo</div></li>
-          <li><div>Logo</div></li>
-          <li><div>Logo</div></li>
-          <li><div>Logo</div></li>
+        <p class="padding-30 text-uppercase font-bold">innovative business trust digitalocean</p>
+        <ul class="list-inline text-center">
+          <li><img src="img/docker.svg" alt=""></li>
+          <li><img src="img/gitlab.svg" alt=""></li>
+          <li><img src="img/slack.svg" alt=""></li>
+          <li><img src="img/hashicorp.svg" alt=""></li>
+          <li><img src="img/hashicorp.svg" alt=""></li>
+          <li><img src="img/splunk.svg" alt=""></li>
         </ul>
       </div>
     </section>
@@ -65,13 +109,48 @@
     <!-- SEZIONE DEPLOY -->
     <section id="deploy">
       <div class="deploy-top text-center">
-        <h2>Deploy...</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eos dicta obcaecati delectus! Harum quo maxime cumque. Consequuntur culpa sed itaque asperiores facilis autem, eum error veritatis at ducimus doloribus.</p>
+        <h2 class="color-textb font-bold margin-top50">Deploy and scale seamlessly</h2>
+        <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD enviroments</p>
       </div>
       <div class="deploy-down">
-        <div class="col-xs-12 col-sm-4 margin-30 height-80">colonna sinistra</div>
-        <div class="col-xs-12 col-sm-8 margin-30">riga sopra</div>
-        <div class="col-xs-12 col-sm-8 margin-30">riga sotto</div>
+        <!-- LISTA -->
+        <div class="col-xs-12 col-sm-3 margin-top50">
+          <ul class="list-deploy line-height-35">
+            <li>Deploy</li>
+            <li>Manage</li>
+            <li>Secure</li>
+            <li>Scale</li>
+            <li>Monitor</li>
+          </ul>
+        </div>
+        
+        <!-- CLUSTER E OPTIMIZED -->
+        <div class="col-xs-12 col-sm-9 box-m">
+          <div class="deploy-box">
+            <img src="img/cluster-deploy.svg" alt="">
+            <h3 class="color-textb">Cluster deployments</h3>
+            <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+          </div>
+          <div class="deploy-box">
+            <img src="img/optimized-compute.svg" alt="">
+            <h3 class="color-textb">Optimized compute types</h3>
+            <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
+          </div>
+        </div>
+        
+        <!-- ONE-CLICK E GLOBAL -->
+        <div class="col-xs-12 col-sm-9 box-m">
+          <div class="deploy-box">
+            <img src="img/one-click.svg" alt="">
+            <h3 class="color-textb">one-click apps</h3>
+            <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+          </div>
+          <div class="deploy-box">
+            <img src="img/global.svg" alt="">
+            <h3 class="color-textb">Global availability</h3>
+            <p>Deploy to any of our data center regions around the world</p>
+          </div>
+        </div>
       </div>
     </section>
 
