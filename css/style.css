@@ -43,17 +43,63 @@ ul .list-inline li{
   height: 350px;
 }
 
-ul{
-  margin: auto;
-}
-
 /* SEZIONE DEPLOY */
 .deploy-down{
   height: 290px;
 }
 
-/* SEZIONE DESIGNED */
 
+/* SEZIONE DESIGNED */
+#designed{
+  height: 300px;
+}
+
+/* SEZIONE FEATURES */
+#features{
+  height: 300px;
+}
+
+/* SEZIONE REGIONS */
+#regions{
+  height: 400px;
+  background-color: blue;
+}
+
+.blocco{
+  max-width: 355px;
+  height: 150px;
+  background-color: white;
+  margin: 10px 10px
+}
+
+#regions h2{
+  color: white;
+}
+
+/* SEZIONE DEVELOPMENT */
+#development{
+  height: 300px;
+}
+
+.box-image{
+  width: 265px;
+  height: 220px;
+  background-color: white;
+  margin: auto;
+}
+
+/* SEZIONE GET-STARTED */
+#get-started{
+  height: 200px;
+  background-color: blue; 
+  color: white;
+}
+
+#footer-list .container .row div{
+  height: 300px;
+  background-color: salmon;
+  margin: 10px 10px;
+}
 
 @media screen and (max-width: 767px){
   .sa-box{
@@ -68,6 +114,14 @@ ul{
     width: 48%;
     margin: 25px 0;
   }
+
+  #features .container .row{
+    text-align: left;
+  }
+
+  .blocco{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -78,6 +132,14 @@ ul{
   .list-loghi{
     height: 250px;
   }
+
+  .height-80{
+    height: 80px;
+  }
+
+  .box-image{
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 992px){
@@ -87,5 +149,13 @@ ul{
   
   .list-loghi{
     height: 250px;
+  }
+
+  .height-80{
+    height: 80px;
+  }
+
+  .box-image{
+    width: 400px;
   }
 }
