@@ -28,22 +28,42 @@
           <!-- PARTE CENTRALE -->
           <div class="hidden-xs hidden-sm col-md-5 line-height-55">
             <ul class="list-inline">
-              <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
-              <li><a href="">Customers</a></li>
-              <li><a href="">Community<i class="fas fa-chevron-down"></i></a></li>
-              <li><a href="">Pricing</a></li>
+              <li>
+                <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="">Customers</a>
+              </li>
+              <li>
+                <a href="">Community <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="">Pricing</a>
+              </li>
             </ul>
           </div>
           <!-- PARTE DI DESTRA -->
           <div class="hidden-xs hidden-sm col-md-4 line-height-55">
             <ul class="list-inline">
-              <li>Docs</li>
-              <li>Support</li>
-              <li>Login</li>
-              <li>Pricing</li>
+              <li>
+                <a href="#">Docs</a>
+              </li>
+              <li>
+                <a href="#">Support <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Login</a>
+              </li>
+              <li>
+                <button type="button" class="btn btn-header">Sing Up</button>
+              </li>
             </ul>
           </div>
-          <div class="col-xs-6 hidden-md hidden-lg text-right">Hamburger menu</div>
+          <div class="col-xs-6 hidden-md hidden-lg">
+            <div class="hamburger-menu"></div>
+            <div class="hamburger-menu"></div>
+            <div class="hamburger-menu"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -81,10 +101,11 @@
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
               </form>
-              <button type="button" class="btn wd-90">Create your account</button>
-              <button type="button" class="btn wd-90">
+              <button type="button" class="wd-90 btn-jumbo ">Create your account</button>
+              <button type="button" class="wd-90 btn-jumbo">
                 <img src="img/google-icon.png" alt="">
-                Sign up with google</button>
+                <p class="font-bold">Sign up with google</p> 
+              </button>
             </div>
           </div>
         </div>
@@ -100,7 +121,7 @@
           <li><img src="img/gitlab.svg" alt=""></li>
           <li><img src="img/slack.svg" alt=""></li>
           <li><img src="img/hashicorp.svg" alt=""></li>
-          <li><img src="img/hashicorp.svg" alt=""></li>
+          <li><img src="img/wework.svg" alt=""></li>
           <li><img src="img/splunk.svg" alt=""></li>
         </ul>
       </div>
@@ -125,13 +146,13 @@
         </div>
         
         <!-- CLUSTER E OPTIMIZED -->
-        <div class="col-xs-12 col-sm-9 box-m">
-          <div class="deploy-box">
+        <div class="col-xs-12 col-sm-9 box-m margin-top10">
+          <div class="deploy-box wd-50">
             <img src="img/cluster-deploy.svg" alt="">
             <h3 class="color-textb">Cluster deployments</h3>
             <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
           </div>
-          <div class="deploy-box">
+          <div class="deploy-box wd-50 paddin-left20">
             <img src="img/optimized-compute.svg" alt="">
             <h3 class="color-textb">Optimized compute types</h3>
             <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
@@ -139,13 +160,13 @@
         </div>
         
         <!-- ONE-CLICK E GLOBAL -->
-        <div class="col-xs-12 col-sm-9 box-m">
-          <div class="deploy-box">
+        <div class="col-xs-12 col-sm-9">
+          <div class="deploy-box wd-50">
             <img src="img/one-click.svg" alt="">
             <h3 class="color-textb">one-click apps</h3>
             <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
           </div>
-          <div class="deploy-box">
+          <div class="deploy-box paddin-left20 wd-50 va-top">
             <img src="img/global.svg" alt="">
             <h3 class="color-textb">Global availability</h3>
             <p>Deploy to any of our data center regions around the world</p>
@@ -156,38 +177,190 @@
 
     <!-- SEZIONE DESIGNED -->
     <section id="designed" class="color-grey">
-      <div class="title-p text-center">
-        <h2>Designed</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam, ex necessitatibus atque recusandae, sit explicabo ipsum harum saepe ad similique consequuntur.</p>
+      <div class="deploy-top text-center designed-top">
+        <h2 class="color-textb font-bold padding-top50">Designed for developers</h2>
+        <p class="wd-90">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API</p>
       </div>
       <div class="carosello text-center margin-30">
-        IMG
+        <img src="img/slide.jpg" alt="">
       </div>
     </section>
 
     <!-- SEZIONE FEATURES -->
     <section id="features" class="text-center">
-      <h2>The features your business</h2>
+      <h2 class="color-textb font-bold padding-top50">The features your business needs</h2>
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-4">1</div>
-          <div class="col-xs-12 col-sm-4">2</div>
-          <div class="col-xs-12 col-sm-4">3</div>
+          <div class="col-xs-12 col-sm-4 margin-top10 text-left">
+            <div class="deploy-box">
+              <img src="img/pred-pricing.svg" alt="">
+              <h3 class="color-textb">Predictable pricing</h3>
+              <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+              <span><a href="" class="color-blue">Pricing </a> <i class="fas fa-chevron-right color-blue"></i></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-left">
+            <div class="deploy-box">
+              <img src="img/world-class.svg" alt="" class="margin-top10">
+              <h3 class="color-textb">World-class service</h3>
+              <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
+              <span><a href="" class="color-blue">Support </a> <i class="fas fa-chevron-right color-blue"></i></span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 text-left">
+            <div class="deploy-box">
+              <img src="img/reliable-platform.svg" alt="" class="margin-top10">
+              <h3 class="color-textb">Reliable platform</h3>
+              <p>More than 100,000 developer teams worldwide trust DigitalOcean to supporrt their business with a 99.99% uptime SLA for all services.</p>
+              <span><a href="" class="color-blue">Security </a> <i class="fas fa-chevron-right color-blue"></i></span>
+            </div>  
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SEZIONE REGIONS -->
-    <section id="regions">
-      <h2 class="text-center">lorem impsum bla bla bla bla</h2>
+    <section id="regions" class="margin-top50">
+      <h2 class="text-center font-bold padding-top50">Service your customers around the world from 12 regions.</h2>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-md-6 blocco">
-            
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                AMS2
+              </div>
+              <div class="col-xs-7">
+                Amsterdam, Netherlands
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                AMS3
+              </div>
+              <div class="col-xs-7">
+                Amsterdam, Netherlands
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                BLR1
+              </div>
+              <div class="col-xs-7">
+                Bangalore, India
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                FRA1
+              </div>
+              <div class="col-xs-7">
+                Frankfurt, German
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                LON1
+              </div>
+              <div class="col-xs-7">
+                London, UK
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city last">
+              <div class="col-xs-2">
+                NYC1
+              </div>
+              <div class="col-xs-7">
+                New York, USA
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
             
           </div>
+          
           <div class="col-xs-12 col-md-6 blocco">
-            
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                AMS2
+              </div>
+              <div class="col-xs-7">
+                Amsterdam, Netherlands
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                AMS3
+              </div>
+              <div class="col-xs-7">
+                Amsterdam, Netherlands
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                BLR1
+              </div>
+              <div class="col-xs-7">
+                Bangalore, India
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                FRA1
+              </div>
+              <div class="col-xs-7">
+                Frankfurt, German
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city">
+              <div class="col-xs-2">
+                LON1
+              </div>
+              <div class="col-xs-7">
+                London, UK
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>
+            <div class="row sa-city last">
+              <div class="col-xs-2">
+                NYC1
+              </div>
+              <div class="col-xs-7">
+                New York, USA
+              </div>
+              <div class="col-xs-3 text-left">
+                <a href="">Test speed</a>
+              </div>
+            </div>  
             
           </div>
         </div>
@@ -196,8 +369,11 @@
 
     <!-- SEZIONE DEVELOPMENT -->
     <section id="development" class="color-grey text-center">
-      <h2>Development teams love DigitalOcean</h2>
-      <div class="box-image"></div>
+      <h2 class="text-center font-bold">Development teams love DigitalOcean</h2>
+      <div class="box-image">
+        <img src="img/rockerbox.png" alt="">
+        <p>"we have been able to make scaling the technical infrastructure of our business cost effective and efficient</p>
+      </div>
     </section>
 
     <!-- SEZIONE GET-STARTED -->

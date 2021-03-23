@@ -3,7 +3,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-ul .list-inline li{
+.list-inline li{
   display: inline-block;
   padding: 0 10px;
   list-style: none;
@@ -29,6 +29,10 @@ ul .list-inline li{
   padding-top: 30px;
 }
 
+.padding-top50{
+  padding-top: 50px;
+}
+
 .color-grey{
   background-color: #f3f5f9;
 }
@@ -50,7 +54,7 @@ ul .list-inline li{
 }
 
 .color-textb{
-  color: #031c4e;
+  color: #1a305d;
 }
 
 .color-blue{
@@ -60,6 +64,11 @@ ul .list-inline li{
 .wd-90{
   width: 90%;
 }
+
+.deploy-top p{
+  margin: auto;
+}
+
 
 /* HEADER */
 .header_fixed{
@@ -71,9 +80,34 @@ ul .list-inline li{
 }
 
 header img{
-  height: 35px;
+  height: 30px;
 }
 
+.hamburger-menu{
+  width: 20px;
+  height: 3px;
+  background-color: #3a8aff;
+  margin: 4px 0px 4px auto;
+  border-radius: 10px;
+}
+
+.header_fixed .container .row div[class*=col-]:last-child{
+  margin-top: 13px;
+}
+
+.header_fixed .list-inline li a{
+  color: #1a305d;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn-header{
+  background-color: white;
+  color: #3a8aff;
+  padding: 15px 32px;
+  font-size: 12px;
+  cursor: pointer;
+}
 /* MAIN */
 /* SEZIONE JUMBOTRON */
 #jumbotron{
@@ -99,9 +133,25 @@ header img{
   margin: 0 auto 8px;
 }
 
-.btn img{
-  height: 30px;
+.btn-jumbo img{
+  height: 18px;
   float: left;
+}
+
+.btn-jumbo{
+  background-color: #579aff;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.btn-jumbo:last-child{
+  background-color: white;
+  color: grey;
+  padding-right: 18px;
+  box-shadow: 1px 1px lightgray;
+  margin: 8px 0;
 }
 
 /* SEZIONE LOGHI */
@@ -136,7 +186,7 @@ header img{
 .deploy-down{
   width: 80%;
   margin: auto;
-  height: 720px;
+  height: 780px;
 }
 .deploy-box{
   font-size: 12px;
@@ -153,32 +203,45 @@ header img{
 }
 
 /* SEZIONE DESIGNED */
-#designed{
-  height: 300px;
+.carosello{
+  margin-top: 90px;
+}
+.carosello img{
+  width: 50%;
 }
 
 /* SEZIONE FEATURES */
-#features{
-  height: 300px;
+.deploy-box span .fas{
+  margin: 0 5px;
+  font-size: 9px;
 }
 
+.deploy-box {
+  margin-top: 10px;
+}
 /* SEZIONE REGIONS */
 #regions{
-  height: 400px;
   background-color: blue;
 }
 
 .blocco{
-  max-width: 355px;
-  height: 150px;
-  background-color: white;
-  margin: 10px 10px
+  max-width: 405px;
 }
 
 #regions h2{
   color: white;
 }
 
+.sa-city{
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+}
+
+.last{
+  border: none;
+  margin-bottom: 20px;
+}
 /* SEZIONE DEVELOPMENT */
 #development{
   height: 300px;
@@ -205,6 +268,9 @@ header img{
 }
 
 @media screen and (max-width: 767px){
+  .hamburger-menu{
+    margin: 4px 15px 4px auto;
+  }
   .sa-box{
     margin-top: 0;
   }  
@@ -229,7 +295,23 @@ header img{
 @media screen and (min-width: 768px) and (max-width: 991px){
   .sa-box{
     width: 263px;
-    height: 400px;
+  }
+  
+  .list-loghi ul li{
+    height: 65.44px;
+  }
+
+  .wd-50{
+    width: 49%;
+    display: inline-block;
+  }
+  
+  .va-top{
+    vertical-align: top;
+  }
+
+  .paddin-left20{
+    padding-left: 25px;
   }
 
   .box-m{
@@ -243,21 +325,16 @@ header img{
   .deploy-down{
     height: 410px;
   }
-
-  .deploy-box{
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-  }
 }
 
 @media screen and (min-width: 992px){
-  .sa-box{
-    height: 400px;
+  .wd-50{
+    width: 49%;
+    display: inline-block;
   }
   
-  .list-loghi{
-    height: 250px;
+  .va-top{
+    vertical-align: top;
   }
 
   .box-image{
@@ -268,10 +345,8 @@ header img{
     height: 410px;
   }
 
-  .deploy-box{
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
+  .paddin-left20{
+    padding-left: 25px;
   }
 
   .box-m{
