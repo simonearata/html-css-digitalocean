@@ -69,6 +69,17 @@ body{
   margin: auto;
 }
 
+/* CERCHIETTI BLU */
+.circle::before {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  line-height: 15px;
+  font-size: 10px;
+  text-align: center;
+}
 
 /* HEADER */
 .header_fixed{
@@ -211,7 +222,7 @@ header img{
 }
 
 /* SEZIONE FEATURES */
-.deploy-box span .fas{
+span .fas{
   margin: 0 5px;
   font-size: 9px;
 }
@@ -219,6 +230,7 @@ header img{
 .deploy-box {
   margin-top: 10px;
 }
+
 /* SEZIONE REGIONS */
 #regions{
   background-color: blue;
@@ -242,17 +254,21 @@ header img{
   border: none;
   margin-bottom: 20px;
 }
+
 /* SEZIONE DEVELOPMENT */
-#development{
-  height: 300px;
+#development h2{
+  margin-top: 0;
 }
 
 .box-image{
   width: 265px;
-  height: 220px;
   background-color: white;
-  margin: auto;
+  margin: 80px auto 0;
 }
+
+/* .box-image span .fas{
+  margin-bottom: 30px;
+} */
 
 /* SEZIONE GET-STARTED */
 #get-started{
