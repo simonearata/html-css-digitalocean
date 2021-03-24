@@ -69,16 +69,17 @@ body{
   margin: auto;
 }
 
+.font-12{
+  font-size: 12px;
+}
+
 /* CERCHIETTI BLU */
-.circle::before {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  border-radius: 50%;
-  line-height: 15px;
-  font-size: 10px;
-  text-align: center;
+#myCarousel{
+  height: 80px;
+}
+
+.carousel-indicators .active{
+  background-color: blue;
 }
 
 /* HEADER */
@@ -119,6 +120,7 @@ header img{
   font-size: 12px;
   cursor: pointer;
 }
+
 /* MAIN */
 /* SEZIONE JUMBOTRON */
 #jumbotron{
@@ -144,7 +146,7 @@ header img{
   margin: 0 auto 8px;
 }
 
-.btn-jumbo img{
+.btn-white img{
   height: 18px;
   float: left;
 }
@@ -157,15 +159,32 @@ header img{
   height: 25px;
 }
 
-.btn-jumbo:last-child{
+.btn-white{
   background-color: white;
   color: grey;
   padding-right: 18px;
   box-shadow: 1px 1px lightgray;
   margin: 8px 0;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.term-serv{
+  font-size: 10px;
+  padding-bottom: 25px;
+}
+
+.term-serv a{
+  text-decoration: underline;
 }
 
 /* SEZIONE LOGHI */
+#loghi{
+  padding-bottom: 30px;
+}
+
 #loghi p{
   color: #727d99;
   font-size: 12px;
@@ -214,11 +233,24 @@ header img{
 }
 
 /* SEZIONE DESIGNED */
+#designed .deploy-top p{
+  color: #5d6a8a;
+}
+
 .carosello{
   margin-top: 90px;
 }
+
 .carosello img{
-  width: 50%;
+  width: 55%;
+}
+
+.carosello p{
+  padding: 10px 0 30px 0;
+}
+
+.carosello img::before{
+  content: '\f053';
 }
 
 /* SEZIONE FEATURES */
@@ -236,10 +268,6 @@ span .fas{
   background-color: blue;
 }
 
-.blocco{
-  max-width: 405px;
-}
-
 #regions h2{
   color: white;
 }
@@ -253,6 +281,14 @@ span .fas{
 .last{
   border: none;
   margin-bottom: 20px;
+}
+
+.sa-city .col-xs-7{
+  color: #9eafdc;
+}
+
+.sa-city .col-xs-3{
+  color: #00cdcf;
 }
 
 /* SEZIONE DEVELOPMENT */
@@ -272,9 +308,22 @@ span .fas{
 
 /* SEZIONE GET-STARTED */
 #get-started{
-  height: 200px;
   background-color: blue; 
   color: white;
+  height: 200px;
+}
+
+#get-started h2{
+  margin-top: 0;
+}
+
+.but-down{
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: #076eff;
+  margin-bottom: 30px;
 }
 
 #footer-list .container .row div{
